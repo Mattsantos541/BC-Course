@@ -101,7 +101,7 @@ class Blockchain:
 # Creating a Web App
 app = Flask(__name__)
 
-# Creating an address for the node on Port 5001
+# Creating an address for the node on Port 5000
 node_address = str(uuid4()).replace('-', '')
 
 # Creating a Blockchain
@@ -180,5 +180,4 @@ def replace_chain():
     return jsonify(response), 200
 
 # Running the app
-app.run(host = '0.0.0.0', port = 5001)
-
+app.run(host = '0.0.0.0', port = 5000)
